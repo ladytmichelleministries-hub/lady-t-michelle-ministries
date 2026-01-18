@@ -139,7 +139,22 @@ footer{
   header h1{ font-size:2.1rem; letter-spacing:1px; }
   .tagline{ font-size:1.05rem; max-width:95%; }
   .scripture{ font-size:.95rem; max-width:95%; }
+  img { display:block; }
 }
+   @media (max-width:600px){
+  header{ padding:40px 16px; }
+  header h1{ font-size:2.1rem; letter-spacing:1px; }
+  .tagline{ font-size:1.05rem; max-width:95%; }
+  .scripture{ font-size:.95rem; max-width:95%; }
+}
+
+/* Desktop banner polish */
+@media (min-width: 900px){
+  .banner{
+    border-radius: 14px;
+    max-width: 1200px;
+    margin: 0 auto;
+ }
 </style>
 
 </head>
@@ -180,12 +195,11 @@ footer{
   </section>
 
   <!-- LAUNCH ANNOUNCEMENT IMAGE -->
-  <section style="padding:0; text-align:center;">
+  <section style="padding:0; margin:0;">
   <img src="images/ltmm_launch_announcement.png"
        alt="Faith-Based Marriage Journals Now Available"
        class="launch-img">
-
-  <div style="margin: 18px 0 35px;">
+  <div style="text-align:center; margin: 18px 0 35px;">
     <a href="https://tmichelleministry.gumroad.com/l/fedyr"
        class="shop-now-btn"
        target="_blank">

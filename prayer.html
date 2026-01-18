@@ -4,14 +4,16 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Prayer Request | Lady T. Michelle Ministries</title>
- <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-HKC6T17X15"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-HKC6T17X15');
-</script>
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-HKC6T17X15"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-HKC6T17X15');
+  </script>
+
   <meta name="description" content="Submit a prayer request. Lady T. Michelle Ministries would be honored to pray with you.">
   <meta property="og:title" content="Prayer Request | Lady T. Michelle Ministries">
   <meta property="og:description" content="Submit a prayer request. We would be honored to pray with you.">
@@ -28,10 +30,11 @@
     .note{background:#fff;border-radius:12px;padding:18px;box-shadow:0 4px 10px rgba(0,0,0,.08);}
     .btn{display:inline-block;margin-top:16px;padding:12px 22px;background:#8b5e3c;color:#fff;text-decoration:none;border-radius:30px;font-weight:bold;}
     .btn:hover{background:#6f472c;}
-    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScaJsLdW79rADAZce47xGbHeLDmLRhS7UQP_j4r3nUZRn2LWg/viewform?embedded=true" width="640" height="724" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+    .form-embed{width:100%;height:950px;border:0;border-radius:12px;box-shadow:0 4px 10px rgba(0,0,0,.08);}
     footer{text-align:center;padding:30px 10px;background:#2f2b28;color:#fff;margin-top:40px;}
   </style>
 </head>
+
 <body>
 
 <nav class="navbar">
@@ -56,9 +59,11 @@
     <a class="btn" href="https://forms.gle/6DhvQkDaN2ri9MAz8" target="_blank">Open Prayer Form</a>
   </p>
 
-  <!-- Embed your Google Form -->
-  <iframe src="https://docs.google.com/forms/d/e/REPLACE_WITH_YOUR_FORM_EMBED_URL/viewform?embedded=true">
-    Loading…
+  <!-- Embed your Google Form (Correct placement: inside BODY, not inside STYLE) -->
+  <iframe
+    class="form-embed"
+    src="https://docs.google.com/forms/d/e/1FAIpQLScaJsLdW79rADAZce47xGbHeLDmLRhS7UQP_j4r3nUZRn2LWg/viewform?embedded=true"
+    loading="lazy">
   </iframe>
 </section>
 

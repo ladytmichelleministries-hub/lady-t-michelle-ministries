@@ -24,11 +24,18 @@
 <!-- Social Preview -->
 <meta property="og:title" content="Lady T. Michelle Ministries">
 <meta property="og:description" content="Faith-based marriage journals for preparation, growth, and restoration.">
-<meta property="og:image" content="https://www.ladytmichelleministries.com/images/ltmm_homepage_banner.png">
 <meta property="og:url" content="https://www.ladytmichelleministries.com/">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://www.ladytmichelleministries.com/images/ltmm_og_image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
+
 <!-- Favicons -->
+<link rel="icon" type="image/png" href="images/ltmm_logo_icon.png">
 <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+<link rel="manifest" href="site.webmanifest">
+<meta name="theme-color" content="#faf7f2">
 
 <!-- Optional: Web app manifest (nice-to-have) -->
 <link rel="manifest" href="site.webmanifest">
@@ -61,14 +68,7 @@ header{
   color:#2f2b28;
 }
 /* Ministry Logo */
-.site-logo {
-  max-width: 260px;
-  width: 100%;
-  height: auto;
-  margin: 0 auto 18px;
-  display: block;
-}
-.site-logo {
+.site-logo{
   max-width: 320px;
   width: 100%;
   height: auto;
@@ -82,14 +82,7 @@ header{
     margin-bottom: 16px;
   }
 }
-
-@media (max-width: 600px) {
-  .site-logo {
-    max-width: 200px;
-    margin-bottom: 14px;
-  }
-}
-Header h1{
+header h1{
   margin:0;
   font-size:2.8rem;
   letter-spacing:1.5px;
@@ -229,9 +222,12 @@ footer{
 .navbar{
   background:#f1e6d6;
   padding:14px 0;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:14px;
   text-align:center;
 }
-
 .navbar a{
   margin:0 14px;
   text-decoration:none;
@@ -244,14 +240,6 @@ footer{
   vertical-align:middle;
   margin-right:12px;
 }
-
-.navbar{
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  gap:14px;
-}
-
 .navbar a:hover{
   text-decoration:underline;
 }

@@ -49,8 +49,22 @@ header{
   text-align:center;
   color:#2f2b28;
 }
+/* Ministry Logo */
+.site-logo {
+  max-width: 260px;
+  width: 100%;
+  height: auto;
+  margin: 0 auto 18px;
+  display: block;
+}
 
-header h1{
+@media (max-width: 600px) {
+  .site-logo {
+    max-width: 200px;
+    margin-bottom: 14px;
+  }
+}
+Header h1{
   margin:0;
   font-size:2.8rem;
   letter-spacing:1.5px;
@@ -209,13 +223,26 @@ footer{
 
 <body>
 <nav class="navbar">
-  <a href="index.html">Home</a>
+  <a href="index.html" style="display:inline-flex; align-items:center;">
+    <img 
+      src="images/ltmm_logo.png" 
+      alt="Lady T. Michelle Ministries Logo"
+      style="height:34px; margin-right:10px;"
+    >
+    Home
+  </a>
   <a href="about.html">About</a>
   <a href="testimonials.html">Testimonials</a>
   <a href="prayer.html">Prayer</a>
 </nav>
 
   <header>
+  <img 
+    src="images/ltmm_logo.png" 
+    alt="Lady T. Michelle Ministries Logo"
+    class="site-logo"
+  >
+
   <h1>Lady T. Michelle Ministries</h1>
 
   <p class="tagline">

@@ -324,3 +324,51 @@ footer{
     margin: 4px 0;
   }
 }
+/* ---------- Strong Mobile Fix for Books & Resources ---------- */
+@media (max-width: 768px) {
+
+  body {
+    width: 100%;
+    overflow-x: hidden;
+  }
+
+  .section {
+    width: 100%;
+    max-width: 100%;
+    padding: 28px 16px;
+    margin: 0 auto;
+  }
+
+  .resource-grid {
+    display: grid;
+    grid-template-columns: 1fr !important;
+    gap: 26px;
+    width: 100%;
+  }
+
+  .resource-card {
+    width: 100%;
+    max-width: 360px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+  .resource-card img {
+    width: 100%;
+    max-width: 240px;
+    height: auto;
+    object-fit: contain;
+  }
+
+  .button-row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .button-row .buy-btn {
+    width: 100%;
+    max-width: 230px;
+    text-align: center;
+    margin: 4px 0;
+  }
+}

@@ -1,141 +1,103 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+/* ============================
+   Lady T. Michelle Ministries
+   Clean Master Stylesheet
+   ============================ */
 
-  <title>Christian Books, Devotionals & Marriage Journals | Lady T. Michelle Ministries</title>
-  <meta name="description" content="Shop Christian books, devotionals, marriage journals, and faith-based resources by Lady T. Michelle and Pastor James McFadgon.">
+:root {
+  --bg: #faf7f2;
+  --ink: #333333;
+  --ink-dark: #2f2b28;
+  --champagne: #d7c2a8;
+  --ivory: #f1e6d6;
+  --gold: #b48a60;
+  --gold-dark: #6f472c;
+  --purple: #5c3a8e;
+  --white: #ffffff;
+  --border: #eadfce;
+  --shadow: rgba(0,0,0,.12);
+  --radius: 14px;
+}
 
-  <link rel="stylesheet" href="styles.css">
-</head>
+* {
+  box-sizing: border-box;
+}
 
-<body>
+body {
+  font-family: Georgia, serif;
+  margin: 0;
+  padding: 0;
+  background: var(--bg);
+  color: var(--ink);
+  overflow-x: hidden;
+}
 
-<nav class="navbar">
-  <a href="index.html" class="nav-brand">
-    <img src="images/ltmm_logo_icon.png" alt="Lady T. Michelle Ministries Logo">
-  </a>
-  <a href="index.html">Home</a>
-  <a href="bookstore.html">Books & Resources</a>
-  <a href="about.html">About</a>
-  <a href="blog.html">Blog</a>
-  <a href="prayer.html">Prayer</a>
-  <a href="testimonials.html">Testimonials</a>
-</nav>
+/* NAVIGATION */
+.navbar {
+  background: var(--ivory);
+  padding: 14px 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  text-align: center;
+  flex-wrap: wrap;
+}
 
-<header>
-  <img src="images/ltmm_logo.png" alt="Lady T. Michelle Ministries Logo" class="site-logo">
-  <p class="tagline">Books, Devotionals & Faith-Based Resources</p>
-  <p class="scripture">“Stronger Marriages Begin on Their Knees.” — Lady T. Michelle</p>
-</header>
+.navbar a {
+  text-decoration: none;
+  font-weight: bold;
+  color: var(--ink-dark);
+  font-size: 1rem;
+}
 
-<section class="section bookstore-intro">
-  <h2>📚 Books & Resources</h2>
-  <p>
-    Discover faith-filled books, devotionals, and marriage resources created to encourage spiritual growth,
-    strengthen relationships, inspire healing, and lead hearts closer to God.
-  </p>
-</section>
+.navbar a:hover {
+  text-decoration: underline;
+}
 
-<section class="section">
-  <h2>Books by Lady T. Michelle</h2>
+.nav-brand img {
+  height: 32px;
+  display: block;
+}
 
-  <div class="resource-grid">
+/* HEADER */
+header {
+  background: var(--champagne);
+  padding: 50px 20px;
+  text-align: center;
+}
 
-    <article class="resource-card">
-      <span class="badge">NEW RELEASE</span>
-      <img src="images/at-his-feet-cover.png" alt="At His Feet book cover">
-      <h3>At His Feet</h3>
-      <p>A 30-day prayer journey for covering your spouse through Scripture, guided prayer, reflection, and declarations.</p>
-      <div class="button-row">
-        <a class="buy-btn" href="https://www.amazon.com/dp/B0H6DZDW59" target="_blank">📖 Paperback</a>
-        <a class="buy-btn" href="https://tmichelleministry.gumroad.com/l/kzgvv" target="_blank">💜 Digital</a>
-      </div>
-    </article>
+.site-logo {
+  max-width: 320px;
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto 22px;
+}
 
-    <article class="resource-card">
-      <span class="badge">RESTORATION SERIES</span>
-      <img src="images/mercifully-kept-cover.png" alt="Mercifully Kept book cover">
-      <h3>Mercifully Kept</h3>
-      <p>A heartfelt Christian testimony of love, heartbreak, healing, and God’s mercy.</p>
-      <div class="button-row">
-        <a class="buy-btn" href="https://www.amazon.com/dp/B087R3WFFQ" target="_blank">📖 Paperback</a>
-        <a class="buy-btn" href="https://tmichelleministry.gumroad.com/l/tvsvs" target="_blank">💜 Digital</a>
-      </div>
-    </article>
+.tagline {
+  font-size: 1.2rem;
+  font-style: italic;
+  max-width: 780px;
+  margin: 14px auto 8px;
+  line-height: 1.5;
+}
 
-    <article class="resource-card">
-      <span class="badge">RESTORATION SERIES</span>
-      <img src="images/shattered-pieces-cover.png" alt="From Shattered Pieces to the Masterpiece book cover">
-      <h3>From Shattered Pieces to the Masterpiece</h3>
-      <p>A powerful testimony of healing, restoration, and becoming God’s masterpiece through broken seasons.</p>
-      <div class="button-row">
-        <a class="buy-btn" href="https://www.amazon.com/dp/1718977972" target="_blank">📖 Paperback</a>
-        <a class="buy-btn" href="https://tmichelleministry.gumroad.com/l/frcjv" target="_blank">💜 Digital</a>
-      </div>
-    </article>
+.scripture {
+  font-size: 1rem;
+  max-width: 820px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
 
-  </div>
-</section>
+/* IMAGES */
+.banner {
+  width: 100%;
+  max-height: 420px;
+  object-fit: cover;
+  display: block;
+}
 
-<section class="section">
-  <h2>Books by Pastor James McFadgon</h2>
-
-  <div class="resource-grid single-card-grid">
-
-    <article class="resource-card">
-      <span class="badge">PASTOR'S BOOK</span>
-      <img src="images/from-the-church-cover.png" alt="From the Church to His Presence book cover">
-      <h3>From the Church to His Presence</h3>
-      <p>A powerful Christian book that challenges believers to move beyond church activity and experience a deeper relationship with God’s presence.</p>
-      <div class="button-row">
-        <a class="buy-btn" href="https://www.amazon.com/dp/B0H6J8GVS7" target="_blank">📖 Paperback</a>
-        <a class="buy-btn" href="https://tmichelleministry.gumroad.com/l/tzygu" target="_blank">💜 Digital</a>
-      </div>
-    </article>
-
-  </div>
-</section>
-
-<section class="section">
-  <h2>Marriage Journals</h2>
-
-  <div class="resource-grid">
-
-    <article class="resource-card">
-      <span class="badge">BEST VALUE</span>
-      <img src="images/bundle.png" alt="Marriage Journey Collection">
-      <h3>The Marriage Journey Collection</h3>
-      <p>All three faith-based marriage journals bundled together for preparation, growth, and restoration.</p>
-      <div class="button-row">
-        <a class="buy-btn" href="https://tmichelleministry.gumroad.com/l/fedyr" target="_blank">💜 Get the Bundle</a>
-      </div>
-    </article>
-
-    <article class="resource-card">
-      <span class="badge">SINGLES</span>
-      <img src="images/preparation_promise.png" alt="Preparation Promise Journal">
-      <h3>Preparation Promise</h3>
-      <p>A faith-based journal designed to prepare singles for marriage God’s way.</p>
-      <div class="button-row">
-        <a class="buy-btn" href="https://tmichelleministry.gumroad.com/l/cjezr" target="_blank">💜 Download Journal</a>
-      </div>
-    </article>
-
-    <article class="resource-card">
-      <span class="badge">COUPLES</span>
-      <img src="images/connection_growth.png" alt="Connection Growth Marriage Journal">
-      <h3>Connection Growth</h3>
-      <p>A journal for couples building a healthy, God-centered marriage rooted in connection and purpose.</p>
-      <div class="button-row">
-        <a class="buy-btn" href="https://tmichelleministry.gumroad.com/l/zhxvd" target="_blank">💜 Download Journal</a>
-      </div>
-    </article>
-
-    <article class="resource-card">
-      <span class="badge">ENCOURAGEMENT</span>
-      <img src="images/strength_storms.png" alt="Strength for the Storms Journal">
-      <h3>Strength for the Storms</h3>
-      <p>A faith-based guide to help couples navigate hard seasons with prayer, Scripture, and unity.</p>
-     
+.launch-img {
+  width: 100%;
+  display: block;
+  margin: 30px 0 18px;
